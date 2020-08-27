@@ -1,6 +1,4 @@
 class SessionsController < ApplicationController
-  skip_before_action :verify_authenticity_token, only: [:destroy]
-  
   def create
     auth_hash = request.env['omniauth.auth']
 
@@ -13,14 +11,12 @@ class SessionsController < ApplicationController
     user.save
 
     session[:user_id] = user.id
-    @current_user = user
     redirect_to dashboard_index_path
   end
 
   def destroy
     session.delete(:user_id)
     session[:user_id] = nil
-    @current_user = nil
     redirect_to root_path
     flash[:success] = 'You have successfully logged out'
   end
