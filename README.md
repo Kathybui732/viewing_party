@@ -1,6 +1,6 @@
 # Viewing Party
 
-[Viewing Party production site](https://peaceful-journey-75998.herokuapp.com/)
+[Viewing Party production site](https://sheltered-chamber-43475.herokuapp.com/)
 
 Developers: [Kathy Bui](http://github.com/kathybui732) and [AJ Tran](http://github.com/ajtran303/)
 
@@ -12,7 +12,7 @@ Viewing party is an application in which users can explore movie options and cre
 
 ## Usage and Features
 
-Visit the [production site](https://peaceful-journey-75998.herokuapp.com/) to use Viewing Party and its features.
+Visit the [production site](https://sheltered-chamber-43475.herokuapp.com/) to use Viewing Party and its features.
 
 Currently, you can log in with your Google Account. We use `OAuth` to delegate authentication to a third party.
 
